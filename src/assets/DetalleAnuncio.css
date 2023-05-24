@@ -1,0 +1,133 @@
+/* FUENTE https://fonts.google.com/specimen/Rubik */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+* {
+  font-family: "Rubik", sans-serif;
+  color: #09090d;
+}
+.contenedor {
+  height: 100vh;
+  background-color: #f6f8fa;
+  box-sizing: border-box;
+  /* AJUSTAR ESTE PADDING CON EL NAV O CON LAS BARRAS LATERALES */
+  padding: 5%;
+}
+.contenido {
+  background-color: #ffffff;
+  padding: 5%;
+  border-radius: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.circulo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 0, 0.5);
+  padding: 15px;
+}
+
+.informacionPrimaria {
+  margin-left: 3%;
+}
+
+p {
+  font-size: 20px;
+}
+
+.detalle {
+  margin: 5% 0 5%;
+}
+
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #233b73;
+  z-index: 1;
+  background: #f8f2ee;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+button:hover {
+  color: #f2f2f7;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #f8ece2;
+}
+
+/* PARA LO RESPONSIVE */
+@media (max-width: 768px) {
+  .circulo {
+    width: 5px;
+    height: 5px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+/* PARA PANTALLAS CELULARES MUY DELGADAS */
+@media (max-width: 380px) {
+  .circulo {
+    display: none;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  button {
+    padding: 5px;
+    font-size: 10px;
+  }
+}

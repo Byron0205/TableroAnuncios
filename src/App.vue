@@ -3,14 +3,12 @@
         <div class="sidebar">
             <agregar-anuncio/>
         </div>
-            <div class="topbar">
-                <img src="./assets/Anuncios.png" alt="Logo" class="img-logo" />
-            </div>
-            <div class="content">
-                <ComponenteAnuncios />
-            </div>
-            
+        <div class="topbar">
+            <img src="./assets/Anuncios.png" alt="Logo" class="img-logo" />
         </div>
+        <ComponenteAnuncios />
+
+    </div>
 </template>
 
 <script>

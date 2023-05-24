@@ -127,6 +127,7 @@ export default {
         border: 1px solid #ccc;
         border-radius: 4px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 99;
     }
 
     .fondo-oscuro {
@@ -136,7 +137,7 @@ export default {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
-        z-index: 999; /* Asegúrate de que el valor del z-index sea mayor que el de otros elementos */
+        z-index: 99; /* Asegúrate de que el valor del z-index sea mayor que el de otros elementos */
     }
 
     button {

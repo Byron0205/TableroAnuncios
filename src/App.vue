@@ -8,7 +8,6 @@
             </div>
             <div class="content">
                 <router-view></router-view>
-                <ComponenteAnuncios />
             </div>
             
         </div>

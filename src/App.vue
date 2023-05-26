@@ -6,8 +6,8 @@
             <div class="topbar">
                 <img src="./assets/Anuncios.png" alt="Logo" class="img-logo" />
             </div>
-            <div class="content">
-                <ComponenteAnuncios />
+            <div>
+                <router-view></router-view>
             </div>
             
         </div>

@@ -7,6 +7,7 @@
 }
 .contenedor {
   height: 100vh;
+  
   background-color: #f6f8fa;
   box-sizing: border-box;
   /* AJUSTAR ESTE PADDING CON EL NAV O CON LAS BARRAS LATERALES */

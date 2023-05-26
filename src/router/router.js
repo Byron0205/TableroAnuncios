@@ -5,7 +5,7 @@ import card from "../components/card.vue";
 // Array de objetos con las rutas
 const routes = [
   { path: "/", component: card },
-  { path: "/detalle/:id", component: DetalleAnuncio },
+  { name: "detalleAnuncio",path: "/detalle/:id", component: DetalleAnuncio },
 ];
 
 const router = createRouter({

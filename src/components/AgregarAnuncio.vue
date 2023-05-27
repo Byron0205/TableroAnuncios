@@ -22,6 +22,8 @@ export default {
                 console.log(res.data)
                 this.mostrarMensaje = true
                 this.mensaje = res.data.mensaje
+                alert(this.mensaje)
+                location.reload()
             } catch(err){
                 console.log(err);
             }
@@ -77,12 +79,6 @@ export default {
             </div>
             <button type="submit">Enviar</button>
         </form>
-        <div v-if="mostrarMensaje" class="fondo-oscuro">
-            <div class="mensaje">
-                <p>{{ mensaje }}</p>
-                <button @click="recargarPagina">Cerrar</button>
-            </div>
-        </div>
     </div>
     
 </template>
@@ -117,28 +113,6 @@ export default {
         margin: 5px 0;
     }
 
-    .mensaje {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 40px 200px;
-        background-color: #ffffff;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        z-index: 99;
-    }
-
-    .fondo-oscuro {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
-        z-index: 99; /* Asegúrate de que el valor del z-index sea mayor que el de otros elementos */
-    }
 
     button {
         padding: 15px 25px;

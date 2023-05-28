@@ -52,22 +52,7 @@ export default {
       console.error("Error al obtener los datos:", error);
     });
     },
-    getPrueba() {
-  fetch("https://reqres.in/api/users?page=2")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Error en la solicitud");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((error) => {
-      console.error("Error al obtener los datos:", error);
-    });
-}
-,
+    
     getRandomColor() {
       const letters = "0123456789ABCDEF";
       let color = "#";

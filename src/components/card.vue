@@ -37,10 +37,7 @@ export default {
   },
   methods: {
     getTodos() {
-      fetch("https://anuncios-api.onrender.com/anuncios", {
-        method: "GET",
-        mode: "no-cors"
-      })
+      fetch("https://anuncios-api.onrender.com/anuncios")
         .then((response) => response.json())
         .then((data) => {
           this.cards = data;
